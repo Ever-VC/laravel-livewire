@@ -1,0 +1,3 @@
+<div>
+    <h2>HOLA DESDE EL COMPOENENTE LIVEWIRE</h2>
+</div>
