@@ -8,13 +8,10 @@ class CreatePost extends Component
 {
     public function render()
     {
-        //return view('livewire.create-post');
         return <<<'HTML'
         <div>
-            HOLA DESDE EL COMPOENENTE CREATE POST
+            {{-- Because she competes with no one, no one can compete with her. --}}
         </div>
-
         HTML;
-
     }
 }
