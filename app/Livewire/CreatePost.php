@@ -20,6 +20,10 @@ class CreatePost extends Component
         );
     }
 
+    public function save() {
+        /* dd($this->name); */
+    }
+
     public function render()
     {
         return view('livewire.create-post');
