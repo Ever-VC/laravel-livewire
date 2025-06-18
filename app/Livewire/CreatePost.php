@@ -11,12 +11,13 @@ class CreatePost extends Component
     // Arreglos, Strings, Enteros, Flotantes, Booleanos, Objetos, Colecciones, Null etc.
 
     public $title; // Se puede acceder desde la vista con $title
-    public $user;
+    public $name, $email;
 
     public function mount(User $user)
     {
         // Busca al usuario con el ID proporcionado
-        $this->user = $user;
+        $this->name = $user->name;
+        $this->email = $user->email;
     }
 
     public function render()
