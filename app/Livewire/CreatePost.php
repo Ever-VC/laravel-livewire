@@ -13,10 +13,10 @@ class CreatePost extends Component
     public $title; // Se puede acceder desde la vista con $title
     public $user;
 
-    public function mount($user)
+    public function mount(User $user)
     {
         // Busca al usuario con el ID proporcionado
-        $this->user = User::find($user);
+        $this->user = $user;
     }
 
     public function render()

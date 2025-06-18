@@ -1,3 +1,3 @@
 <div>
-    <h2>{{ $title }} desde el componente! [{{ $user }}] </h2>
+    <h2>{{ $title }} desde el componente! [{{ $user->name }}] </h2>
 </div>
