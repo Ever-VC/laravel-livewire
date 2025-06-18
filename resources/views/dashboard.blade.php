@@ -8,7 +8,8 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             @livewire('create-post', [
-                'title' => "Hola Mundo por parametos"
+                'title' => "Hola Mundo por parametos",
+                'user' => 1
             ])
         </div>
     </div>
