@@ -15,9 +15,9 @@ class CreatePost extends Component
 
     public function mount(User $user)
     {
-        // Busca al usuario con el ID proporcionado
-        $this->name = $user->name;
-        $this->email = $user->email;
+       $this->fill(
+            $user->only(['name', 'email'])
+        );
     }
 
     public function render()
