@@ -16,7 +16,7 @@ class Contador extends Component
     {
         $this->count--;
     }
-    public function sumar($cantidad)
+    public function sumar($cantidad=1)
     {
         $this->count += $cantidad;
     }
