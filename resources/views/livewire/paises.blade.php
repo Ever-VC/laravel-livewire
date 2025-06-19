@@ -16,7 +16,12 @@
     <div wire:loading.remove>
         <ul class="list-disc list-inside">
             @foreach($paises as $pais)
-            <li>{{ $pais }}</li>
+            <li class="mb-2">
+                {{ $pais }}
+                <x-danger-button>
+                    <span wire:click="eliminarPais('{{ $pais }}')">x</span>
+                </x-danger-button>
+            </li>
         </ul>
     @endforeach
     </div>
